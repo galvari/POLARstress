@@ -52,6 +52,19 @@ The core script processes **Polar Verity Sense session files** to detect stress 
 - **Stress Flagging**
 - **Visualization (Optional)**
 
+
+### **How Stress Levels Are Flagged**
+Stress levels are determined by comparing the calculated **RMSSD values** with the baseline RMSSD. The system flags the stress levels as follows:
+
+| **Stress Level**     | **Condition**                                 | **Color in Plot** |
+|----------------------|-----------------------------------------------|-------------------|
+| Stressed         | RMSSD ≤ baseline_mean - 2 * baseline_std      | Red            |
+| Aroused      | baseline_mean - 2 * baseline_std < RMSSD ≤ baseline_mean - baseline_std | Yellow              |
+|Stable    | baseline_mean - baseline_std < RMSSD ≤ baseline_mean + baseline_std | Green  |
+| Relaxed              | RMSSD > baseline_mean + baseline_std          | Blue        |
+
+---
+
 **Usage:**
 ```
 python src/stress_detection.py --input_file <path/to/input.csv> --output_folder <path/to/output_folder> --save_plot
@@ -59,7 +72,10 @@ python src/stress_detection.py --input_file <path/to/input.csv> --output_folder 
 ##### Sample data from session 1 and 2, output visualization:
 ![Flagging Visualization](/data/sample_data1.png "Sample data1 output visualization")
 ![Stress Visualization](/data/sample_data2.png "Sample data2 output visualization")
+
+
 ---
+
 ## **Requirements**
 
 To install the required packages:
@@ -82,17 +98,7 @@ For more information on Polar products, visit: [https://www.polar.com](https://w
 
 ---
 
-## **How Stress Levels Are Flagged**
-Stress levels are determined by comparing the calculated **RMSSD values** with the baseline RMSSD. The system flags the stress levels as follows:
 
-| **Stress Level**     | **Condition**                                 | **Color in Plot** |
-|----------------------|-----------------------------------------------|-------------------|
-| Stressed         | RMSSD ≤ baseline_mean - 2 * baseline_std      | Red            |
-| Aroused      | baseline_mean - 2 * baseline_std < RMSSD ≤ baseline_mean - baseline_std | Yellow              |
-|Stable    | baseline_mean - baseline_std < RMSSD ≤ baseline_mean + baseline_std | Green  |
-| Relaxed              | RMSSD > baseline_mean + baseline_std          | Blue        |
-
----
 
 ## **License**
 This project is licensed under the **Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0)**.
