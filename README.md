@@ -1,4 +1,4 @@
-# **POLARstress: Stress Detection Algorithm Using Polar Verity Sense HR Data**
+# **POLARstress: Lightweight Real-Time Stress Detection from Polar Verity Sense HR Data**
 
 ## **About**
 **POLARstress** is a lightweight, HR-based stress detection algorithm designed for **real-time continuous monitoring** using [**Polar Verity Sense**](https://www.polar.com) sensor data. It applies **Heart Rate Variability (HRV)** analysis to approximate stress levels using the **RMSSD (Root Mean Square of Successive Differences)** metric. The algorithm is optimized to work on **low computational power** devices, making it suitable for **real-time applications in clinical settings** such as **therapy sessions** and **biofeedback interventions**.
