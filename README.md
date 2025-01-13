@@ -84,7 +84,20 @@ pip install -r requirements.txt
 ```
 
 ---
-## **Usage of Polar Verity Sense Sensor Data**
+---
+
+## **License**
+This project is licensed under the **Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0)**.
+
+You are free to use, modify, and share the code for **non-commercial purposes** as long as proper attribution is given.
+
+For any commercial use or inquiries, please contact the authors at **[alvari.gianpaolo@gmail.com]**.
+
+To view a copy of this license, visit:
+[https://creativecommons.org/licenses/by-nc/4.0/](https://creativecommons.org/licenses/by-nc/4.0/)
+
+---
+### **Usage of Polar Verity Sense Sensor Data**
 
 This project processes HR (Heart Rate) data obtained from the Polar Verity Sense sensor. Please note:
 
@@ -95,22 +108,9 @@ Users are responsible for ensuring compliance with the Polar terms of use and pr
 For more information on Polar products, visit: [https://www.polar.com](https://www.polar.com)
 
 
-
+---
 ---
 
-
-
-## **License**
-This project is licensed under the **Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0)**.
-
-You are free to use, modify, and share the code for **non-commercial purposes** as long as proper attribution is given.
-
-For any commercial use or inquiries, please contact the authors at **[your_email@example.com]**.
-
-To view a copy of this license, visit:
-[https://creativecommons.org/licenses/by-nc/4.0/](https://creativecommons.org/licenses/by-nc/4.0/)
-
----
 
 ## **References**
 
