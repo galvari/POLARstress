@@ -56,7 +56,7 @@ The core script processes **Polar Verity Sense session files** to detect stress 
 ```
 python src/stress_detection.py --input_file <path/to/input.csv> --output_folder <path/to/output_folder> --save_plot
 ```
-Sample data from session 1 and 2, output visualization:
+#### Sample data from session 1 and 2, output visualization:
 ![Flagging Visualization](/data/sample_data1.png "Sample data1 output visualization")
 ![Stress Visualization](/data/sample_data2.png "Sample data2 output visualization")
 ---
