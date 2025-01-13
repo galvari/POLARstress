@@ -60,8 +60,15 @@ python src/stress_detection.py --input_file <path/to/input.csv> --output_folder 
 ![Flagging Visualization](/data/sample_data1.png "Sample data1 output visualization")
 ![Stress Visualization](/data/sample_data2.png "Sample data2 output visualization")
 ---
+## **Requirements**
 
-### Usage of Polar Verity Sense Sensor Data
+To install the required packages:
+```
+pip install -r requirements.txt
+```
+
+---
+## **Usage of Polar Verity Sense Sensor Data**
 
 This project processes HR (Heart Rate) data obtained from the Polar Verity Sense sensor. Please note:
 
@@ -72,12 +79,6 @@ Users are responsible for ensuring compliance with the Polar terms of use and pr
 For more information on Polar products, visit: [https://www.polar.com](https://www.polar.com)
 
 
-## **Requirements**
-
-To install the required packages:
-```
-pip install -r requirements.txt
-```
 
 ---
 
