@@ -73,15 +73,6 @@ For more information on Polar products, visit: [https://www.polar.com](https://w
 
 
 ## **Requirements**
-```
-pandas
-numpy
-matplotlib
-seaborn
-scikit-learn
-psutil
-tqdm
-```
 
 To install the required packages:
 ```
