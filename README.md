@@ -1,7 +1,7 @@
 # **POLARstress: Stress Detection Algorithm Using Polar Verity Sense HR Data**
 
 ## **About**
-**POLARstress** is a lightweight, HR-based stress detection algorithm designed for **real-time continuous monitoring** using **Polar Verity Sense** sensor data. It applies **Heart Rate Variability (HRV)** analysis to approximate stress levels using the **RMSSD (Root Mean Square of Successive Differences)** metric. The algorithm is optimized to work on **low computational power** devices, making it suitable for **real-time applications in clinical settings** such as **therapy sessions** and **biofeedback interventions**.
+**POLARstress** is a lightweight, HR-based stress detection algorithm designed for **real-time continuous monitoring** using [**Polar Verity Sense**](https://www.polar.com) sensor data. It applies **Heart Rate Variability (HRV)** analysis to approximate stress levels using the **RMSSD (Root Mean Square of Successive Differences)** metric. The algorithm is optimized to work on **low computational power** devices, making it suitable for **real-time applications in clinical settings** such as **therapy sessions** and **biofeedback interventions**.
 
 This project aims to detect **stress, arousal, stability, and relaxation** phases using only **HR (bpm)** signals, focusing on practical, deployable use in **mobile apps** or **wearable devices**.
 
@@ -9,9 +9,9 @@ This project aims to detect **stress, arousal, stability, and relaxation** phase
 
 ### 🎯 **Key Features**
 - **Stress Detection Using HR Only:** No need for complex PPG or ECG signals—works with simple HR data.
-- **Baseline Calculation:** Automatic identification of the most relaxing 2-minute baseline period.
+- **Baseline Calculation:** Automatic identification of the most relaxing 2-minute baseline period (if not provided).
 - **Overlapping Windows Analysis:** Tracks RMSSD trends over time for continuous stress monitoring.
-- **Stress Flagging:** Flags stress levels based on RMSSD thresholds (High Stress, Moderate Stress, Normal, Relaxed).
+- **Stress Flagging:** Flags stress levels based on RMSSD thresholds (Stressed, Aroused, Stable, Relaxed).
 - **Efficient Computation:** Designed to run on devices with limited processing power (e.g., wearables, mobile apps).
 
 ---
@@ -30,9 +30,9 @@ The algorithm performs the following steps:
 ```
 POLARstress/
 ├── README.md
+├── LICENSE.md
 ├── src/
 │   ├── stress_detection_algo.py  # Main script for stress detection
-│   └── visualization.py     # Optional script for generating visual plots
 ├── data/
 │   └── sample_data.csv      # Example Polar session data
 └── requirements.txt
@@ -58,6 +58,15 @@ python src/stress_detection.py --input_file <path/to/input.csv> --output_folder 
 
 ---
 
+### Usage of Polar Verity Sense Sensor Data
+
+This project processes HR (Heart Rate) data obtained from the Polar Verity Sense sensor. Please note:
+
+The software is not affiliated with or endorsed by Polar Electro.
+
+Users are responsible for ensuring compliance with the Polar terms of use and privacy policy when using Polar devices and data.
+
+For more information on Polar products, visit: [https://www.polar.com](https://www.polar.com)
 
 
 ## **Requirements**
@@ -83,10 +92,10 @@ Stress levels are determined by comparing the calculated **RMSSD values** with t
 
 | **Stress Level**     | **Condition**                                 | **Color in Plot** |
 |----------------------|-----------------------------------------------|-------------------|
-| High Stress          | RMSSD ≤ baseline_mean - 2 * baseline_std      | Salmon            |
-| Moderate Stress      | baseline_mean - 2 * baseline_std < RMSSD ≤ baseline_mean - baseline_std | Gold              |
-| Normal (Stable)      | baseline_mean - baseline_std < RMSSD ≤ baseline_mean + baseline_std | Medium Sea Green  |
-| Relaxed              | RMSSD > baseline_mean + baseline_std          | Steel Blue        |
+| Stressed         | RMSSD ≤ baseline_mean - 2 * baseline_std      | Red            |
+| Aroused      | baseline_mean - 2 * baseline_std < RMSSD ≤ baseline_mean - baseline_std | Yellow              |
+|Stable    | baseline_mean - baseline_std < RMSSD ≤ baseline_mean + baseline_std | Green  |
+| Relaxed              | RMSSD > baseline_mean + baseline_std          | Blue        |
 
 ---
 
@@ -111,7 +120,6 @@ To view a copy of this license, visit:
   journal={arXiv preprint arXiv:2404.07159},
   year={2024}
 }
-```
 
 ```bibtex
 @article{gabrielli2023co,

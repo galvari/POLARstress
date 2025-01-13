@@ -23,6 +23,17 @@ This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 I
 
 ### **NonCommercial**
 - You may not use the material for commercial purposes.
+---
+
+### Usage of Polar Verity Sense Sensor Data
+
+This project processes HR (Heart Rate) data obtained from the Polar Verity Sense sensor. Please note:
+
+The software is not affiliated with or endorsed by Polar Electro.
+
+Users are responsible for ensuring compliance with the Polar terms of use and privacy policy when using Polar devices and data.
+
+For more information on Polar products, visit: [https://www.polar.com](https://www.polar.com)
 
 ---
 
