@@ -34,7 +34,8 @@ POLARstress/
 ├── src/
 │   ├── stress_detection_algo.py  # Main script for stress detection
 ├── data/
-│   └── sample_data.csv      # Example Polar session data
+│   ├── sample_data1.csv      # Example Polar session data1
+│   └── sample_data2.csv      # Example Polar session data1
 └── requirements.txt
 ```
 
@@ -55,8 +56,11 @@ The core script processes **Polar Verity Sense session files** to detect stress 
 ```
 python src/stress_detection.py --input_file <path/to/input.csv> --output_folder <path/to/output_folder> --save_plot
 ```
-![Alt text](/data/sample_data.png "Sample data output visualization")
+Sample data from session 1 output visualization:
+![Alt text](/data/sample_data.png "Sample data1 output visualization")
 
+Sample data from session 2 output visualization
+![Alt text](/data/sample_data.png "Sample data2 output visualization")
 ---
 
 ### Usage of Polar Verity Sense Sensor Data
