@@ -115,7 +115,7 @@ To view a copy of this license, visit:
   year={2024}
 }
 
-```bibtex
+
 @article{gabrielli2023co,
   title={Co-Design of a Virtual Reality Multiplayer Adventure Game for Adolescents With Autism Spectrum Disorder: Mixed Methods Study},
   author={Gabrielli, Silvia and Cristofolini, Melanie and Dianti, Marco and Alvari, Gianpaolo and Vallefuoco, Ersilia and Bentenuto, Arianna and Venuti, Paola and Ibarra, Oscar Mayora and Salvadori, Elio and others},
